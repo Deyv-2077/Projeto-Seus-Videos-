@@ -46,30 +46,103 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormAmpulheta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormAmpulheta.Designer.cs">
+      <DependentUpon>FormAmpulheta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vid1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vid1.Designer.cs">
+      <DependentUpon>Form_Vid1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vid3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vid3.Designer.cs">
+      <DependentUpon>Form_Vid3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vid4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vid4.Designer.cs">
+      <DependentUpon>Form_Vid4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vid5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vid5.Designer.cs">
+      <DependentUpon>Form_Vid5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vids.Designer.cs">
+      <DependentUpon>Form_Vids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vid2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vid2.Designer.cs">
+      <DependentUpon>Form_Vid2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vids2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vids2.Designer.cs">
+      <DependentUpon>Form_Vids2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormAmpulheta.resx">
+      <DependentUpon>FormAmpulheta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vid1.resx">
+      <DependentUpon>Form_Vid1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vid3.resx">
+      <DependentUpon>Form_Vid3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vid4.resx">
+      <DependentUpon>Form_Vid4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vid5.resx">
+      <DependentUpon>Form_Vid5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vids.resx">
+      <DependentUpon>Form_Vids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vid2.resx">
+      <DependentUpon>Form_Vid2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vids2.resx">
+      <DependentUpon>Form_Vids2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -78,6 +151,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seus Vídeos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seus Vídeos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seus Vídeos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seus Vídeos21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seus Vídeos22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16-42-28-220_512.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

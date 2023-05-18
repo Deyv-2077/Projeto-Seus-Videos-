@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto_Video_Windows_Forms
 {
-    partial class Form1
+    partial class Form_Video1
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,29 +29,24 @@ namespace Projeto_Video_Windows_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.webBrowser1_1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
-            // webBrowser1
+            // webBrowser1_1
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(800, 450);
-            this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
-            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            this.webBrowser1_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1_1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1_1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1_1.Name = "webBrowser1_1";
+            this.webBrowser1_1.Size = new System.Drawing.Size(992, 479);
+            this.webBrowser1_1.TabIndex = 0;
             // 
-            // Form1
+            // Form_Video1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.webBrowser1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(992, 479);
+            this.Controls.Add(this.webBrowser1_1);
+            this.Name = "Form_Video1";
+            this.Load += new System.EventHandler(this.Form_Video1_Load);
             this.ResumeLayout(false);
 
         }
@@ -59,6 +54,7 @@ namespace Projeto_Video_Windows_Forms
         #endregion
 
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.WebBrowser webBrowser1_1;
     }
 }
 
