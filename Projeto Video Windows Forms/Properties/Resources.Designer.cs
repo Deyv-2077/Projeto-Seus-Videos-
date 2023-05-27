@@ -73,6 +73,26 @@ namespace Projeto_Video_Windows_Forms.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mario_question_block {
+            get {
+                object obj = ResourceManager.GetObject("mario-question-block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mario_question_block_novo {
+            get {
+                object obj = ResourceManager.GetObject("mario-question-block_novo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Seus_Vídeos {
             get {
                 object obj = ResourceManager.GetObject("Seus Vídeos", resourceCulture);
@@ -116,6 +136,16 @@ namespace Projeto_Video_Windows_Forms.Properties {
         internal static System.Drawing.Bitmap Seus_Vídeos22 {
             get {
                 object obj = ResourceManager.GetObject("Seus Vídeos22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap video_plus_icon_136058 {
+            get {
+                object obj = ResourceManager.GetObject("video_plus_icon_136058", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

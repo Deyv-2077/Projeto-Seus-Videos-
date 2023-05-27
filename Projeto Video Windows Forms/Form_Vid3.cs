@@ -19,10 +19,10 @@ namespace Projeto_Video_Windows_Forms
 
         private void Form_Vid3_Load(object sender, EventArgs e)
         {
-
-
             //Atribuindo o link do Google Drive para a variável videoUrl.
             string videoUrl3 = "https://drive.google.com/file/d/1X0j3CJNS96Y4BI4A35AdcLWE_FkhLUBI/preview";
+
+            webBrowser3_3.ScriptErrorsSuppressed = true;
 
             //Criando o código HTML para que o vídeo seja executado dentro do form.
             string html = $@"

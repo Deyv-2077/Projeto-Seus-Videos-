@@ -37,7 +37,7 @@
             this.webBrowser2_2.Location = new System.Drawing.Point(0, 0);
             this.webBrowser2_2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2_2.Name = "webBrowser2_2";
-            this.webBrowser2_2.Size = new System.Drawing.Size(881, 1055);
+            this.webBrowser2_2.Size = new System.Drawing.Size(800, 450);
             this.webBrowser2_2.TabIndex = 0;
             this.webBrowser2_2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 1055);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.webBrowser2_2);
             this.Name = "Form_Vid2";
             this.Text = "Form_Vid2";

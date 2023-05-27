@@ -36,9 +36,9 @@
             this.webBrowser2 = new System.Windows.Forms.WebBrowser();
             this.webBrowser3 = new System.Windows.Forms.WebBrowser();
             this.webBrowser4 = new System.Windows.Forms.WebBrowser();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,15 +121,7 @@
             this.webBrowser4.Name = "webBrowser4";
             this.webBrowser4.Size = new System.Drawing.Size(278, 213);
             this.webBrowser4.TabIndex = 18;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Projeto_Video_Windows_Forms.Properties.Resources.Seus_Vídeos22;
-            this.pictureBox5.Location = new System.Drawing.Point(127, 42);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(620, 69);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
+            this.webBrowser4.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser4_DocumentCompleted_1);
             // 
             // label5
             // 
@@ -152,12 +144,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Projeto_Video_Windows_Forms.Properties.Resources.Seus_Vídeos22;
+            this.pictureBox5.Location = new System.Drawing.Point(127, 42);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(620, 69);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
             // Form_Vids
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(863, 578);
+            this.ClientSize = new System.Drawing.Size(926, 578);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.webBrowser4);

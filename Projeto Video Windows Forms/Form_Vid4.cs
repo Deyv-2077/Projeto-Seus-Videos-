@@ -19,10 +19,11 @@ namespace Projeto_Video_Windows_Forms
 
         private void Form_Vid4_Load(object sender, EventArgs e)
         {
+            webBrowser4_4.ScriptErrorsSuppressed = true;
 
 
             //Atribuindo o link do Google Drive para a variável videoUrl.
-            string videoUrl3 = "https://drive.google.com/file/d/1X5XYNPzu_1mOxbBXnSmHo6tvXCs99O4M/preview";
+            string videoUrl4 = "https://drive.google.com/file/d/1X5XYNPzu_1mOxbBXnSmHo6tvXCs99O4M/preview";
 
             //Criando o código HTML para que o vídeo seja executado dentro do form.
             string html = $@"
@@ -30,13 +31,13 @@ namespace Projeto_Video_Windows_Forms
         <html>
         <body>
             <video width='640' height='360' controls>
-                <source src='{videoUrl3}' type='video/mp4'>
+                <source src='{videoUrl4}' type='video/mp4'>
             </video>
         </body>
         </html>
     ";
             //Indicando para o webBrowser a variável que contém o link a ser acessado.
-            webBrowser4_4.Navigate(videoUrl3);
+            webBrowser4_4.Navigate(videoUrl4);
 
 
 

@@ -33,7 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBoxVideoAdd = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVideoAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +55,7 @@
             this.webBrowser6.Name = "webBrowser6";
             this.webBrowser6.Size = new System.Drawing.Size(278, 213);
             this.webBrowser6.TabIndex = 17;
+            this.webBrowser6.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser6_DocumentCompleted_1);
             // 
             // label2
             // 
@@ -68,11 +71,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(500, 377);
+            this.label1.Location = new System.Drawing.Point(530, 377);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 20);
+            this.label1.Size = new System.Drawing.Size(141, 20);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Viagem ao Japão - PT 5";
+            this.label1.Text = "Adicionar Vídeo";
             // 
             // button1
             // 
@@ -83,6 +86,17 @@
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBoxVideoAdd
+            // 
+            this.pictureBoxVideoAdd.Image = global::Projeto_Video_Windows_Forms.Properties.Resources.video_plus_icon_136058;
+            this.pictureBoxVideoAdd.Location = new System.Drawing.Point(469, 161);
+            this.pictureBoxVideoAdd.Name = "pictureBoxVideoAdd";
+            this.pictureBoxVideoAdd.Size = new System.Drawing.Size(278, 213);
+            this.pictureBoxVideoAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxVideoAdd.TabIndex = 23;
+            this.pictureBoxVideoAdd.TabStop = false;
+            this.pictureBoxVideoAdd.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox5
             // 
@@ -99,6 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(863, 578);
+            this.Controls.Add(this.pictureBoxVideoAdd);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -109,6 +124,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Vids2";
             this.Load += new System.EventHandler(this.Form_Vids2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVideoAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,5 +139,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.PictureBox pictureBoxVideoAdd;
     }
 }

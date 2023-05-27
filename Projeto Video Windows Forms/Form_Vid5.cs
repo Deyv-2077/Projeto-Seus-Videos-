@@ -23,6 +23,9 @@ namespace Projeto_Video_Windows_Forms
             //Atribuindo o link do Google Drive para a variável videoUrl.
             string videoUrl5 = "https://drive.google.com/file/d/1XEB56ipsUEddhzf3v78Z-L6DjZ0ldzYN/preview";
 
+            webBrowser5_5.ScriptErrorsSuppressed = true;
+
+
             //Criando o código HTML para que o vídeo seja executado dentro do form.
             string html = $@"
         <!DOCTYPE html>

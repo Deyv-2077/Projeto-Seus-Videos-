@@ -48,7 +48,11 @@ namespace Projeto_Video_Windows_Forms
 
             void webBrowserUm()
             {
+
                 string videoUrl = "https://drive.google.com/file/d/1UKjhSHmsXzb4svd_QKWx7acDtSGHcMB0/preview";
+
+                webBrowser1.ScriptErrorsSuppressed = true;
+
 
                 //Criando o código HTML para que o vídeo seja executado dentro do form.
                 string html = $@"
@@ -81,6 +85,9 @@ namespace Projeto_Video_Windows_Forms
             {
                 string videoUrl2 = "https://drive.google.com/file/d/1WwOvCeHCDrC-NPhPQXIhHigS4vRnBJg_/preview";
 
+                webBrowser2.ScriptErrorsSuppressed = true;
+
+
                 //Criando o código HTML para que o vídeo seja executado dentro do form.
                 string html = $@"
                                          <!DOCTYPE html>
@@ -112,6 +119,8 @@ namespace Projeto_Video_Windows_Forms
             {
                 string videoUrl3 = "https://drive.google.com/file/d/1X0j3CJNS96Y4BI4A35AdcLWE_FkhLUBI/preview";
 
+                webBrowser3.ScriptErrorsSuppressed = true;
+
                 //Criando o código HTML para que o vídeo seja executado dentro do form.
                 string html = $@"
                                          <!DOCTYPE html>
@@ -142,6 +151,9 @@ namespace Projeto_Video_Windows_Forms
             void webBrowserQuatro()
             {
                 string videoUrl4 = "https://drive.google.com/file/d/1X5XYNPzu_1mOxbBXnSmHo6tvXCs99O4M/preview";
+
+                webBrowser4.ScriptErrorsSuppressed = true;
+
 
                 //Criando o código HTML para que o vídeo seja executado dentro do form.
                 string html = $@"
@@ -241,22 +253,11 @@ namespace Projeto_Video_Windows_Forms
             }
         }
 
-        private void webBrowser4_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+      /*  private void webBrowser4_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            //Adicione um manipulador de eventos para o clique no vídeo no WebBrowser
-            //webBrowser2.Document.Click += WebBrowserDocument_Click;
-            webBrowserLoaded = true;
-
-
-            if (!video4Clicked)
-            {
-                // Adicione o manipulador de eventos para o clique no vídeo no WebBrowser
-                webBrowser4.Document.Click += WebBrowser4Document_Click;
-
-                // Define a variável videoClicked como true para que o manipulador de eventos seja adicionado apenas uma vez
-                video4Clicked = true;
-            }
+            
         }
+      */
 
         // private void webBrowser3_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
         //{
@@ -329,6 +330,26 @@ namespace Projeto_Video_Windows_Forms
             FormAmpulheta formAmpulheta = new FormAmpulheta("Tempo reduzido");
             formAmpulheta.ShowDialog();
         }
+
+        private void webBrowser4_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+            //Adicione um manipulador de eventos para o clique no vídeo no WebBrowser
+            //webBrowser2.Document.Click += WebBrowserDocument_Click;
+            webBrowserLoaded = true;
+
+
+            if (!video4Clicked)
+            {
+                // Adicione o manipulador de eventos para o clique no vídeo no WebBrowser
+                webBrowser4.Document.Click += WebBrowser4Document_Click;
+
+                // Define a variável videoClicked como true para que o manipulador de eventos seja adicionado apenas uma vez
+                video4Clicked = true;
+            }
+
+        }
+
 
         private void WebBrowser3Document_Click(object sender, HtmlElementEventArgs e)
         {

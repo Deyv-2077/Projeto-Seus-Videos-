@@ -38,14 +38,15 @@ namespace Projeto_Video_Windows_Forms
             this.webBrowser1_1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1_1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1_1.Name = "webBrowser1_1";
-            this.webBrowser1_1.Size = new System.Drawing.Size(992, 479);
+            this.webBrowser1_1.Size = new System.Drawing.Size(800, 450);
             this.webBrowser1_1.TabIndex = 0;
             // 
             // Form_Video1
             // 
-            this.ClientSize = new System.Drawing.Size(992, 479);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.webBrowser1_1);
             this.Name = "Form_Video1";
+            this.Text = "Form_Vid1";
             this.Load += new System.EventHandler(this.Form_Video1_Load);
             this.ResumeLayout(false);
 

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAddVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddVideo.Designer.cs">
+      <DependentUpon>FormAddVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAmpulheta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddVideo.resx">
+      <DependentUpon>FormAddVideo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAmpulheta.resx">
       <DependentUpon>FormAmpulheta.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +178,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\16-42-28-220_512.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario-question-block.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario-question-block_novo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_plus_icon_136058.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
